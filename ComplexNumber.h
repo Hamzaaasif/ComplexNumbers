@@ -75,8 +75,8 @@ ComplexNumber operator +(ComplexNumber& z2)
   ComplexNumber operator /(ComplexNumber& z2)
   {
     ComplexNumber z3;
-    z3.real=((this->real*z2.real)-(this->imaginary*-z2.imaginary))/((this->real*this->real)+(z2.imaginary*z2.imaginary));
-    z3.imaginary=((this->real*-z2.imaginary)+(this->imaginary*z2.real)) / ((this->real*this->real)+(z2.imaginary*z2.imaginary));
+    z3.real=(((this->real*z2.real)-(this->imaginary*-z2.imaginary))/((z2.real*z2.real)+(z2.imaginary*z2.imaginary)));
+    z3.imaginary= (((this->real*-z2.imaginary)+(this->imaginary*z2.real)) / ((z2.real*z2.real)+(z2.imaginary*z2.imaginary)));
     return z3;
   };
 
